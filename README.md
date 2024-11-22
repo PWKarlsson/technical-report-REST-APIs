@@ -102,7 +102,7 @@ python app.py
 # Comparison
 
 | Aspects | Node.js (Express) | Flask |
-| ------- | ----------------- | ----- |
+| :-----: | :---------------: | :---: |
 | Language | JavaScript       | Python |
 | Fraemwork | Javascript web Framework | Python Web Framework |
 | Platform | Built on V8 engine | CPython |

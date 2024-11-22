@@ -208,7 +208,7 @@ What method to choose for your project is highly dependent on your programming l
 
 ---
 ### References
-[Python Flask vs Node.js Express](https://medium.com/@roelljr/python-flask-vs-node-js-express-4662b6f97b28) [2024-11-21]
+[Python Flask vs Node.js Express](https://medium.com/@roelljr/python-flask-vs-node-js-express-4662b6f97b28) - [2024-11-21]
 
 ---
 _Pontus Karlsson_

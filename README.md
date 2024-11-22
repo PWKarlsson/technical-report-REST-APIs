@@ -1,5 +1,5 @@
 # Node.js with Express vs. Flask
-The purpose of this report is to compare two popular framworks for building REST APIs, Node.js with Express (JavaScript-based) and Flask (Python-based). It will go through their setup processes, how they are built, their pros and cons and when to use which framework.
+The purpose of this report is to compare two popular framworks for building REST APIs, Node.js with Express (JavaScript-based) and Flask (Python-based). It will go through their setup processes, how they are built and some of their pros and cons.
 
 ---
 ## Node.js with Express

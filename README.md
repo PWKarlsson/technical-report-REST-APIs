@@ -136,5 +136,5 @@ python app.py
 Both Node.js with Express and Flask are great tools to use when it comes to building a REST API for your project. They both have their pros and cons relative to eachother and have their different use-cases. Node.js would be preferred if your project is built on a Javascript ecosysem, if it requires high performance and scalability or if you are in the need of a large library of pre-built packages.
 Flask is a choice to consider if you are new to programming and lack knowledge about JavaScript/Node.js, if you are working on a machine-learning project, or if your project is not in need of high performance and/or scalability.
 What method to choose for your project is highly dependent on your programming language knowledge and what type of project you are working on.
-
+---
 _Pontus Karlsson_

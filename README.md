@@ -14,11 +14,11 @@ npm install express
 #### 2. Create API
    
 ```
-touch index.js
+touch index.mjs (if you use .js instead of .mjs you need to add 'type: module' in your package-json for Node.js to treat it as an ES module).
 ```
 
 ```
-//index.js
+//index.mjs
 
 import express from 'express';
 
@@ -27,7 +27,7 @@ const port = 1337;
 
 app.use(express.json());
 
-let item = [{ id: 1, name: 'Item 1'}]
+let items = [{ id: 1, name: 'Item 1'}]
 
 app.get('/items', (req, res) => {
     res.json(items);
@@ -46,7 +46,32 @@ app.listen(port, () => {
 #### 3. Start the API
 
 ```
-node index.js
+node index.mjs
+```
+
+#### 4. Test the API (new terminal window)
+##### Fetch all items
+
+```
+curl -X GET http://localhost:1337/items
+```
+
+##### Expected response
+
+```
+[{"id":1, "name":"Item 1"}]
+```
+
+##### Add a new item
+
+```
+curl -X POST http://localhost:1337/items -H "Content-Type: application/json" -d '{"name": "Item 2"}'
+```
+
+##### Expected response
+
+```
+[{"id":1, "name":"Item 1"},{"id:2, "name":"Item 2"}]
 ```
 
 ## Flask

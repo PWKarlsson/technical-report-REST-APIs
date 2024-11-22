@@ -207,4 +207,8 @@ Flask is a choice to consider if you are new to programming and lack knowledge a
 What method to choose for your project is highly dependent on your programming language knowledge and what type of project you are working on.
 
 ---
+### References
+[Python Flask vs Node.js Express](https://medium.com/@roelljr/python-flask-vs-node-js-express-4662b6f97b28)
+
+---
 _Pontus Karlsson_

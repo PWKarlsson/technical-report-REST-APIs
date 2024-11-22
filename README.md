@@ -1,8 +1,8 @@
 # Node.js with Express vs. Flask
 The purpose of this report is to compare two popular framworks for building REST APIs, Node.js with Express (JavaScript-based) and Flask (Python-based). It will go through their setup processes, how they are built, their pros and cons and when to use which framework.
-# Node.js with Express
-## Setup
-### 1. Install Node.js and create a new project
+## Node.js with Express
+### Setup
+#### 1. Install Node.js and create a new project
 
 ```
 mkdir express-api
@@ -11,7 +11,7 @@ npm init -y
 npm install express
 ```
 
-### 2. Create API
+#### 2. Create API
    
 ```
 touch index.js
@@ -43,28 +43,28 @@ app.listen(port, () => {
 });
 ```
 
-### 3. Start the API
+#### 3. Start the API
 
 ```
 node index.js
 ```
 
-# Flask
-## Setup
-### 1. Make sure that you have Python installed, then install Flask
+## Flask
+### Setup
+#### 1. Make sure that you have Python installed, then install Flask
 
 ```
 pip install flask
 ```
 
-### 2. Create a new project
+#### 2. Create a new project
 
 ```
 mkdir flask-api
 cd flask-api
 ```
 
-### 3. Create API
+#### 3. Create API
 
 ```
 touch app.py
@@ -93,13 +93,13 @@ if __name__ == '__main__':
    app.run(debug=True)
 ```
 
-### 3. Start the api
+#### 4. Start the api
 
 ```
 python app.py
 ```
 
-# Comparison
+## Comparison
 
 | Aspects | Node.js (Express) | Flask |
 | :-----: | :---------------: | :---: |
@@ -111,28 +111,28 @@ python app.py
 | Web server integration | Built in HTTP-server (e.g., http, Express) | Reuquires a separate web server (e.g., Apache, Nginx) |
 | Learning curve | Somewhat steeper, requires knowledge of JavaScrip | Somewhat flatter, requires knowledge of Python which is an easier language to learn |
 
-# Pros and Cons
+## Pros and Cons
 ### Node.js with Express
-### Pros:
+#### Pros:
    * Asynchronous, can handle multiple request at a time.
    * Large ecosystem of npm packages to utilize.
    * High scalability due to the non-blocking I/O model and event-driven archiecture.
-### Cons:
+#### Cons:
    * Steeper learning curve, requires knowledge of Node.js/JavaScript.
    * Higly depent on npm packages, you need to learn what you need.
    * Even though the asynchronus environment increases scalability, it can make the error handling trickier to cope with.
 
 ### Flask
-### Pros:
+#### Pros:
    * Python-based which is a simple and beginner-friendly language.
    * Supports template engines like Jinja2.
    * Integrates well with projects that involves data science or machine-learning.
-### Cons:
+#### Cons:
    * Synchronous by default, hadles one request at a time.
    * Lack of built-in features, often requires additional libraries.
    * Less suitable for javaScript-heavy stacks.
 
-# Conclusion
+## Conclusion
 Both Node.js with Express and Flask are great tools to use when it comes to building a REST API for your project. They both have their pros and cons relative to eachother and have their different use-cases. Node.js would be preferred if your project is built on a Javascript ecosysem, if it requires high performance and scalability or if you are in the need of a large library of pre-built packages.
 Flask is a choice to consider if you are new to programming and lack knowledge about JavaScript/Node.js, if you are working on a machine-learning project, or if your project is not in need of high performance and/or scalability.
 What method to choose for your project is highly dependent on your programming language knowledge and what type of project you are working on.

@@ -74,6 +74,7 @@ curl -X POST http://localhost:1337/items -H "Content-Type: application/json" -d 
 [{"id":1, "name":"Item 1"},{"id:2, "name":"Item 2"}]
 ```
 
+---
 ## Flask
 ### Setup
 #### 1. Make sure that you have Python installed, then install Flask
@@ -121,9 +122,48 @@ if __name__ == '__main__':
 #### 4. Start the api
 
 ```
-python app.py
+python3 app.py
 ```
 
+#### 5. Test the API (new terminal window)
+##### Fetch all items
+
+```
+curl -X GET http://127.0.0.1:5000/items
+```
+
+##### Expected response
+
+```
+[
+   {
+      "id":1,
+      "name": "Item 1"
+   }
+]
+```
+
+##### Add a new item
+
+```
+curl -X POST http://127.0.0.1:5000/items -H "Content-Type: application/json" -d '{"name": "Item 2"}'
+```
+
+##### Expected response
+
+```
+[
+   {
+      "id":1,
+      "name": "Item 1"},
+   {
+      "id:2,
+      "name": "Item 2"
+   }
+]
+```
+
+---
 ## Comparison
 
 | Aspects | Node.js (Express) | Flask |
@@ -157,6 +197,7 @@ python app.py
    * Lack of built-in features, often requires additional libraries.
    * Less suitable for javaScript-heavy stacks.
 
+---
 ## Conclusion
 Both Node.js with Express and Flask are great tools to use when it comes to building a REST API for your project. They both have their pros and cons relative to eachother and have their different use-cases. Node.js would be preferred if your project is built on a Javascript ecosysem, if it requires high performance and scalability or if you are in the need of a large library of pre-built packages.
 Flask is a choice to consider if you are new to programming and lack knowledge about JavaScript/Node.js, if you are working on a machine-learning project, or if your project is not in need of high performance and/or scalability.

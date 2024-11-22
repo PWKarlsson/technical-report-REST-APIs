@@ -99,6 +99,18 @@ if __name__ == '__main__':
 python app.py
 ```
 
+# Comparison
+
+| Aspects | Node.js (Express) | Flask |
+| ------- | ----------------- | ----- |
+| Language | JavaScript       | Python |
+| Fraemwork | Javascript web Framework | Python Web Framework |
+| Platform | Built on V8 engine | CPython |
+| Architecture | Event-driven, non blocking I/O | Web Server Gateway Interface |
+| Cocurrency | Single threaded | Multi-threaded |
+| Web server integration | Built in HTTP-server (e.g., http, Express) | Reuquires a separate web server (e.g., Apache, Nginx) |
+| Learning curve | Somewhat steeper, requires knowledge of JavaScrip | Somewhat flatter, requires knowledge of Python which is an easier language to learn |
+
 # Pros and Cons
 ## Node.js with Express
 ## * Pros:

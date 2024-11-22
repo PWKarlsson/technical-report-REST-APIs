@@ -16,7 +16,8 @@ npm install express
 #### 2. Create API
    
 ```
-touch index.mjs (if you use .js instead of .mjs you need to add 'type: module' in your package-json for Node.js to treat it as an ES module).
+touch index.mjs
+(if you use .js instead of .mjs you need to add 'type: module' in your package-json for Node.js to treat it as an ES module).
 ```
 
 ```

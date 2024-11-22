@@ -33,7 +33,7 @@ app.get('/items', (req, res) => {
     res.json(items);
 });
 app.post('/items', (req, res) => {
-    const item = { id: items.length + 1, req.body.name };
+    const item = { id: items.length + 1, name: req.body.name };
     items.push(item)
     res.status(201).json(item)
 });
